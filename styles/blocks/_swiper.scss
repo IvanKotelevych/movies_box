@@ -1,0 +1,37 @@
+.swiper {
+  padding: 30px 0;
+  margin-bottom: 30px;
+
+  &__img {
+    height: 309px;
+    width: 205px;
+    border-radius: 20px;
+    object-fit: cover;
+
+    transition: all .3s;
+
+    @include onMobile {
+      height: 220px;
+      width: 146px;
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 50px -25px #26FFF2;
+    }
+  }
+
+  &-slide {
+    height: 100%;;
+    width: 205px;
+
+    @include onMobile {
+      width: 164px;
+    }
+  }
+
+  &-pagination-bullet {
+    border-radius: var(--swiper-pagination-bullet-border-radius,50%);
+    background: var(--swiper-pagination-bullet-inactive-color,#fff);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .4)
+}
+}

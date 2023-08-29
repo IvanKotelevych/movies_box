@@ -1,0 +1,46 @@
+.gr {
+  &_color_blue {
+    background: linear-gradient(352deg, #26FFF2 0%, #326CFF 100%);
+    color: #fff;
+  }
+
+  &_color_green {
+    background: linear-gradient(143deg, #0FFFDA 0%, #3CDB77 100%);
+    color: #fff;
+  }
+
+  &_color_purple {
+    background: linear-gradient(136deg, #B936FF 0%, #57DEDA 100%);
+    color: #fff;
+  }
+
+  &_color_orange {
+    background: linear-gradient(136deg, #FD093F 0%, #FB1378 0.01%, #FCCB1A 100%);
+    color: #fff;
+  }
+
+  &_color_sunset {
+    background: linear-gradient(136deg, #FF6472 0%, #FDA75D 100%);
+    color: #fff;
+  }
+
+  &_color_light-ocean {
+    background: linear-gradient(137deg, #13547A 0%, #80D0C7 100%);
+    color: #fff;
+  }
+
+  &_color_yellow {
+    background: linear-gradient(137deg, #FFF77B 0%, #FFBF42 100%);
+    color: #fff;
+  }
+
+  &_color_dark-ocean {
+    background: linear-gradient(136deg, #1FA2FF 0%, #1FA2FF 0.01%, #1F535C 97.40%);
+    color: #fff;
+  }
+
+  &_color_pink {
+    background: linear-gradient(136deg, #FD093F 0%, #F383F1 100%);
+    color: #fff;
+  }
+}

@@ -1,0 +1,38 @@
+.reference {
+  height: 35px;
+  width: max-content;
+  margin-bottom: 10px;
+
+  &__link {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 20px;
+
+    transition: all .3s;
+
+    @include onMobile {
+      font-size: 18px;
+    }
+
+    &:hover {
+      transform: rotate3d(0, 1, 0, 6deg);
+    }
+  }
+
+  &__line {
+    height: 35px;
+    width: 8px;
+    border-radius: 4px;
+
+    @include onMobile {
+      height: 30px;
+      width: 6px;
+      border-radius: 3px;
+    }
+  }
+}

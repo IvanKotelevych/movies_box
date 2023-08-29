@@ -1,0 +1,128 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+
+  &_search {
+    &::after {
+      display: block;
+      content: '';
+      background-image: url(../images/icons/search.svg);
+      background-size: 18px 18px;
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  &_bell {
+    &::after {
+      display: block;
+      content: '';
+      background-image: url(../images/icons/bell.svg);
+      background-size: 22px 24px;
+      height: 24px;
+      width: 22px;
+    }
+  }
+
+  &_account {
+    &::after {
+      display: block;
+      content: '';
+      background-image: url(../images/icons/account.svg);
+      background-size: 18px 19px;
+      height: 19px;
+      width: 18px;
+    }
+  }
+
+  &_star {
+    &::after {
+      display: block;
+      content: '';
+      background-image: url(../images/icons/star.svg);
+      background-size: 16px 16px;
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &_play {
+    &::after {
+      display: block;
+      content: '';
+      background-image: url(../images/icons/play.svg);
+      background-size: 16px 16px;
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &_bracket {
+    &::after {
+      display: block;
+      content: '';
+      background-image: url(../images/icons/angle-bracket.svg);
+      background-size: 32px 32px;
+      height: 32px;
+      width: 32px;
+
+      @include onMobile {
+        background-size: 28px 28px;
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+
+  &_castle {
+    @include genresIcon {
+      background-image: url(../images/genres/castle.svg);
+    }
+  }
+
+  &_cinema {
+    @include genresIcon {
+      background-image: url(../images/genres/cinema.svg);
+    }
+  }
+
+  &_documentary {
+    @include genresIcon {
+      background-image: url(../images/genres/documentary.svg);
+    }
+  }
+
+  &_ghost {
+    @include genresIcon {
+      background-image: url(../images/genres/ghost.svg);
+    }
+  }
+
+  &_hearts {
+    @include genresIcon {
+      background-image: url(../images/genres/hearts.svg);
+    }
+  }
+
+  &_killer {
+    @include genresIcon {
+      background-image: url(../images/genres/killer.svg);
+    }
+  }
+
+  &_rocket {
+    @include genresIcon {
+      background-image: url(../images/genres/rocket.svg);
+      transform: scale(1.5);
+    }
+  }
+
+  &_smile {
+    @include genresIcon {
+      background-image: url(../images/genres/smile.svg);
+    }
+  }
+}

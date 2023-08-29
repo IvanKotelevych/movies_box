@@ -1,0 +1,138 @@
+.hero {
+  display: flex;
+  height: 766px;
+
+  padding-left: $pd-wrapper;
+
+  @include onTablet {
+    padding-left: ($pd-wrapper - 35px);
+  }
+
+  @include onMobile {
+    flex-direction: column-reverse;
+    height: max-content;
+    padding: 0;
+  }
+
+  &__wrapper {
+    padding-right: 20px;
+    margin: 0 0 0 auto;
+
+    @include onMobile {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 562px;
+    height: 100%;
+
+    @include onTablet {
+      max-width: 360px;
+    }
+
+    @include onMobile {
+      width: 100%;
+      padding: 0 ($pd-wrapper - 65px);
+      max-width: none;
+    }
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: "Marcellus";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 70px;
+
+    margin-bottom: 48px;
+
+    @include onTablet {
+      font-size: 48px;
+      margin-bottom: 32px;
+    }
+
+    @include onMobile {
+      text-align: center;
+      font-size: 42px;
+      line-height: 64px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 35px;
+
+    @include onTablet {
+      font-size: 14px;
+    }
+
+    @include onMobile {
+      line-height: 24px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 30px;
+
+    @include onMobile {
+      gap: none;
+      justify-content: space-around;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+      z-index: 2;
+    }
+
+    @include onMobile {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+        z-index: 2;
+      }
+
+      height: 352px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    box-shadow: -10px 0px 10px #000;
+
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+  }
+}
