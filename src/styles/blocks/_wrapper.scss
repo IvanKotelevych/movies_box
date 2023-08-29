@@ -1,0 +1,15 @@
+.wrapper {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  padding: 0 $pd-wrapper;
+
+  @include onTablet {
+    padding: 0 ($pd-wrapper - 35px);
+  }
+
+  @include onMobile {
+    padding: 0 ($pd-wrapper - 65px);
+  }
+}

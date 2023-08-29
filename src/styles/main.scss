@@ -1,0 +1,35 @@
+@import 'utils/mixins';
+@import 'utils/vars';
+@import 'utils/normalize';
+
+@import 'blocks/icon';
+@import 'blocks/btn';
+@import 'blocks/gr';
+@import 'blocks/swiper';
+
+@import 'blocks/header';
+@import 'blocks/wrapper';
+@import 'blocks/logo';
+@import 'blocks/page-nav';
+@import 'blocks/user-nav';
+@import 'blocks/burger';
+
+body.lock {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@import 'blocks/hero';
+@import 'blocks/movie-info';
+
+@import 'blocks/reference';
+@import 'blocks/trending';
+
+@import 'blocks/genres';
+@import 'blocks/popular';
+@import 'blocks/soon';
+
+@import 'blocks/register';
+
+@import 'blocks/footer';
+@import 'blocks/nav-general';
