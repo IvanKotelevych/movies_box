@@ -728,7 +728,7 @@ body.lock {
 }
 .hero__img-container {
   position: relative;
-  width: 100%;
+  width: calc(100vw - (100vw - 1600px) / 2 - 678px);
   height: 100%;
 }
 .hero__img-container:before {
@@ -743,6 +743,7 @@ body.lock {
 }
 @media screen and (max-width: 767px) {
   .hero__img-container {
+    width: 100%;
     height: 352px;
     margin-bottom: 10px;
   }
